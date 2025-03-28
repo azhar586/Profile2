@@ -182,24 +182,45 @@ nav .menu-icon {
     transition: transform 0.3s ease;
 }
 
-#about p {
-    font-size: 20px;
-    line-height: 1.8;
-    color: black;
-    opacity: 0.9;
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-image {
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s ease;
+}
+
+.about-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: black;
+    opacity: 0.9;
     text-align: justify;
     word-spacing: 0.02em;
 }
 
 /* Hover Effect for Paragraph */
-#about p:hover {
+.about-text p:hover {
     opacity: 1;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -407,7 +428,7 @@ nav .menu-icon {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -495,11 +516,6 @@ footer {
         padding: 50px 20px;
     }
 
-    #about p {
-        word-spacing: 0.02em; /* Reduced spacing for mobile */
-        text-align: left;
-    }
-
     #projects {
         padding: 50px 20px;
     }
@@ -580,11 +596,12 @@ footer {
 
 .about-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: left;
+}
+
+.about-image {
+    margin-bottom: 20px;
 }
 
 .about-image img {
@@ -596,12 +613,26 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.about-image {
-    margin-right: 20px;
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
 }
 
-.about-content p {
-    flex: 1;
-    font-size: 18px;
-    line-height: 1.6;
+.about-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: black;
+    opacity: 0.9;
+    text-align: justify;
+    word-spacing: 0.02em;
+}
+
+/* Hover Effect for Paragraph */
+.about-text p:hover {
+    opacity: 1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
